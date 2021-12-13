@@ -3,56 +3,60 @@ package com.exlab;
 public class FirstLesson {
 
 	public static void main(String[] args) {
-		int a = 0;
-		int b = 15;
-		int sum = 1;
-		sum = sum + 5;
-		int index = 0;
-		double c = 9.3;
-		boolean d = false;
 		
-//      simple number
-		for(int i = 0; i<=100; i++) {
-			boolean isPrime = true;
-			
-			for(int j = 2; j < i; j++) {
-				if(i % j == 0) {
-					isPrime = false;
-					break;
-				}
+		String strNew = "Lesson3";
+		
+//		System.out.println(strNew);
+//		String[] books = {"Harry Poter", "Lord of Ring", "Thinking Java"};
+//		for(int i = 1; i < books.length; i++) {
+//			if(i == 3) {
+//				System.out.println(books[i]);
+//			}
+//		}
+		
+		int[][] arraySuperNumber = {{1, 4, 5},{6, 1, 4}, {3, 2, 0}};
+		for(int i = 0; i < 3; i++) {
+			for(int j = 0; j < 3; j++) {
+				System.out.print(arraySuperNumber[i][j] + " ");
 			}
-			
-			if(isPrime) {
-				System.out.println(i);
-			}
+			System.out.println();
 		}
 		
-		
-//	    even number
-//		for(int i = 0; i < 15; i++) {
-//			
-//			if((i % 2 == 0) & (i !=0)) {
-//				System.out.println("Yhooo!: " + i);
+		//min, max, avg
+//		int n = 100;
+//		double[] array = new double[n];
+//		for(int i = 0; i < array.length; i++) {
+//			array[i] = Math.random();
+//		}
+//		
+//		double max = array[0];
+//		double min = array[0];
+//		double avg = 0;
+//		for(int i = 0; i < array.length; i++) {
+//			if(max < array[i]) {
+//				max = array[i];
 //			}
-//			
+//			if(min > array[i]) {
+//				min = array[i];
+//			}
+//			avg += array[i]/array.length;
 //		}
+//		System.out.println("max = " + max);
+//		System.out.println("min = " + min);
+//		System.out.println("avg = " + avg);
 		
-//		while(a < b) {
-//			a++;
-//			index++;
-//			System.out.println(index + " OK! " + a);
-//		}
-		
-//		if(a != b) {
-//			sum += 5;
-//			System.out.println("OK! " + sum);
-//		} else {
-//			sum = sum - 16;
-//			System.out.println("NOT! " + sum);
-//		}
-		
-//		System.out.println(sum);
 
+//		double[] arrayNumber = new double[92];
+//		for(int i = 0; i < arrayNumber.length; i++) {
+//			arrayNumber[i] = Math.random();
+//		}
+//		
+//		for(int i = 0; i < arrayNumber.length; i++) {
+//			if(i == 12) {
+//				System.out.println(arrayNumber[i]);
+//			}
+//		}
+		
 	}
 
 }
