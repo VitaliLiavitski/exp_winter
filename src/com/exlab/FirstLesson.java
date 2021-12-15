@@ -4,7 +4,11 @@ public class FirstLesson {
 
 	public static void main(String[] args) {
 		
+<<<<<<< HEAD
 		String strNew = "Lesson3";
+=======
+		String strNew = "Les";
+>>>>>>> 1ce3a3caaaae7115f9c463718f808477933a80ad
 		
 //		System.out.println(strNew);
 //		String[] books = {"Harry Poter", "Lord of Ring", "Thinking Java"};
