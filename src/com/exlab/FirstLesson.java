@@ -4,7 +4,7 @@ public class FirstLesson {
 
 	public static void main(String[] args) {
 		
-		String strNew = "Lesson";
+		String strNew = "Lesson3";
 		
 //		System.out.println(strNew);
 //		String[] books = {"Harry Poter", "Lord of Ring", "Thinking Java"};
