@@ -1,6 +1,6 @@
 package com.exlab.animal;
 
-public class Cat extends Animal {
+public class Cat extends Animal implements IPet {
 	
 	private String voice = "May-may!";
 	private int run = 20;
@@ -41,5 +41,15 @@ public class Cat extends Animal {
 		System.out.println("Name: " + this.name);
 		System.out.println("Type: " + getType());
 		System.out.println("=====");
+	}
+
+	@Override
+	public void eat() {
+		System.out.println("Fish!");
+	}
+
+	@Override
+	public String printInfoPet() {
+		return this.name + this.voice;
 	}
 }
