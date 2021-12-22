@@ -1,51 +1,35 @@
 package com.exlab;
 
 import com.exlab.animal.Cat;
+import com.exlab.animal.Cow;
+import com.exlab.animal.Dog;
 import com.exlab.animal.Kitty;
+import com.exlab.farm.Farm;
 
 public class Executor {
 	
 	public static void main(String [] args) {
 		
-		Cat cat1 = new Cat();
-		Cat cat2 = new Cat();
-		
-		System.out.println(cat1.getVoice());
-		System.out.println(cat2.getVoice());
-		System.out.println("=====");
-		
-		cat1.setVoice("Rrrrr");
-		cat2.setVoice("Thhhhh");
-		
-		
-		System.out.println(cat1.getVoice());
-		System.out.println(cat1.getRun());
-		System.out.println(cat2.getVoice());
-		
-		System.out.println("===Kitty===");
-		
-		
-		Kitty kitty = new Kitty();
-		System.out.println(kitty.getVoice());
-		System.out.println(kitty.getRun());
-		System.out.println(kitty.getAge());
-		System.out.println(kitty.getType());
-		
-		Cat cat3 = new Cat("Barsik");
-		String name = cat3.getName();
-		System.out.println(name);
-		
-		
 		Cat cat4 = new Cat("Tom");
 		cat4.setType("Wild");
 		cat4.setVoice("RRRRRRR!!");
 		cat4.setRun(40);
-		cat4.printInfo();
+//		cat4.printInfo();
 		
+		Kitty kitty1 = new Kitty("Snezhok");
+//		kitty1.printInfo();
+//		kitty1.eat();
+//		kitty1.eat("Meat");
 		
-		Cat cat5 = new Cat("Pushok");
-		cat5.setRun(5);
-		cat5.printInfo();
+		Dog dog1 = new Dog("Sharik");
+		Cow cow = new Cow("Burenka");
+		
+		Farm farm1 = new Farm("Usadba");
+//		farm1.setPet(cat4);
+//		farm1.setPet(dog1);
+//		farm1.setPet(kitty1);
+		farm1.setPet(cow);
+		System.out.println(farm1.getPet().printInfoPet());
 	}
 
 }

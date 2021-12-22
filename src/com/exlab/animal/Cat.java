@@ -50,6 +50,6 @@ public class Cat extends Animal implements IPet {
 
 	@Override
 	public String printInfoPet() {
-		return this.name + this.voice;
+		return this.name;
 	}
 }
