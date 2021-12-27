@@ -1,35 +1,36 @@
 package com.exlab;
 
-import com.exlab.animal.Cat;
-import com.exlab.animal.Cow;
-import com.exlab.animal.Dog;
-import com.exlab.animal.Kitty;
-import com.exlab.farm.Farm;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Executor {
 	
 	public static void main(String [] args) {
 		
-		Cat cat4 = new Cat("Tom");
-		cat4.setType("Wild");
-		cat4.setVoice("RRRRRRR!!");
-		cat4.setRun(40);
-//		cat4.printInfo();
+		List<String>  listStr = new ArrayList<String>();
+		listStr.add("Abc");
+		listStr.add("defG");
+		listStr.add("111");
+		listStr.add("2222");
+		listStr.add("3333");
 		
-		Kitty kitty1 = new Kitty("Snezhok");
-//		kitty1.printInfo();
-//		kitty1.eat();
-//		kitty1.eat("Meat");
+//		System.out.println(listStr);
+//		System.out.println("=====");
+//		System.out.println(listStr.get(0));
+//		System.out.println(listStr.get(1));
 		
-		Dog dog1 = new Dog("Sharik");
-		Cow cow = new Cow("Burenka");
+		for(String str1 : listStr) {
+			System.out.println(str1);
+		}
 		
-		Farm farm1 = new Farm("Usadba");
-//		farm1.setPet(cat4);
-//		farm1.setPet(dog1);
-//		farm1.setPet(kitty1);
-		farm1.setPet(cow);
-		System.out.println(farm1.getPet().printInfoPet());
+		System.out.println("=====");
+		
+		listStr.remove(3);
+		
+		for(String str1 : listStr) {
+			System.out.println(str1);
+		}
+		
 	}
 
 }
