@@ -1,6 +1,6 @@
 package com.exlab.animal;
 
-public class Cow implements IPet{
+public class Cow extends Animal implements IPet{
 	
 	private String name = "Default";
 	
@@ -19,6 +19,11 @@ public class Cow implements IPet{
 	@Override
 	public String printInfoPet() {
 		return getName();
+	}
+
+	@Override
+	public void eat() {
+		System.out.println("grass");
 	}
 
 }
